@@ -1,0 +1,118 @@
+/* Main Container Styles */
+.form-container {
+    display: flex; /* Align items side by side */
+    justify-content: space-around; /* Distribute space evenly */
+    align-items: flex-start; /* Align items to the top */
+    margin-top: 50px; /* Add space above the form */
+    padding: 20px; /* Add padding inside the container */
+  }
+
+  /* Heading Styles */
+.form-builder-heading {
+    text-align: center; /* Center the heading */
+    font-size: 36px; /* Large font size */
+    font-weight: bold; /* Bold font weight */
+    margin-bottom: 30px; /* Space below the heading */
+    color: #333; /* Dark gray color */
+  }
+  
+  /* Input Side Styles */
+  .input-side {
+    flex: 1; /* Allow this side to take full space */
+    padding: 20px; /* Add padding */
+    max-width: 400px; /* Limit maximum width */
+  }
+  
+  .input-side h3 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Add space below the heading */
+  }
+  
+  /* Input Sentence Styles */
+  .input-sentence {
+    width: 100%; /* Make the input full width */
+    padding: 10px; /* Add padding inside the input */
+    font-size: 16px; /* Increase font size */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light border */
+    margin-bottom: 20px; /* Add space below the input */
+  }
+  
+  /* Button Styles */
+  .generate-btn,
+  .remove-btn,
+  .submit-btn {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Add padding */
+    font-size: 16px; /* Increase font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .generate-btn:hover,
+  .remove-btn:hover,
+  .submit-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .remove-btn {
+    margin-left: 10px; /* Add space between buttons */
+  }
+  
+  /* Editable Fields Styles */
+  ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+  }
+  
+  li {
+    margin-bottom: 10px; /* Add space between list items */
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
+  }
+  
+  /* Preview Side Styles */
+  .preview-side {
+    flex: 1; /* Allow this side to take full space */
+    padding: 40px; /* Add padding */
+    padding-top: 20px;
+    max-width: 400px; /* Limit maximum width */
+    background-color: #f8f8f8; /* Light gray background color */
+    border-radius: 8px; /* Rounded corners for the preview */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .preview-side h3 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Add space below the heading */
+  }
+  
+  form {
+    display: flex; /* Align items vertically */
+    flex-direction: column; /* Arrange items in a column */
+    gap: 15px; /* Space between form elements */
+  }
+  
+  label {
+    font-weight: bold; /* Bold label text */
+    margin-bottom: 5px; /* Add space below the label */
+  }
+  
+  input,
+  select {
+    width: 100%; /* Full width */
+    padding: 10px; /* Add padding */
+    font-size: 16px; /* Increase font size */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light border */
+  }
+  
+  .error {
+    color: red; /* Red text for error messages */
+    font-size: 14px; /* Smaller font size */
+    margin-top: 5px; /* Space above error message */
+  }
+  
