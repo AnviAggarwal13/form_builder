@@ -1,5 +1,7 @@
 <h1 class="form-builder-heading">FORM BUILDER</h1>
 <div class="form-container">
+
+  <!-- input side -->
     <div class="input-side">
       <h3>Enter Sentence</h3>
       <input
@@ -19,6 +21,7 @@
       </ul>
     </div>
   
+    <!-- preview side -->
     <div class="preview-side">
       <h3>Form Preview</h3>
       <form [formGroup]="formGroup">
@@ -28,7 +31,6 @@
           <!-- Handle Different Input Types -->
           <ng-container [ngSwitch]="field.type">
             
-            <!-- Text, Email, Tel Inputs -->
             <input
               *ngSwitchCase="'text'"
               [type]="field.type"
@@ -52,8 +54,13 @@
               [id]="field.name"
               [placeholder]="'Enter ' + field.name"
             />
-  
-            <!-- Radio Buttons -->
+
+            <input
+            *ngSwitchCase="'date'"
+            type="date"
+            [formControlName]="field.name"
+          />
+
             <div *ngSwitchCase="'radio'" [formGroup]="formGroup">
               <ng-container *ngFor="let option of field.options">
                 <input
@@ -66,14 +73,14 @@
               </ng-container>
             </div>
   
-            <!-- Dropdown (Select) -->
+            
             <select *ngSwitchCase="'dropdown'" [formControlName]="field.name" [id]="field.name">
               <option *ngFor="let option of field.options" [value]="option">{{ option }}</option>
             </select>
   
           </ng-container>
   
-          <!-- Error Message -->
+          
           <div
             *ngIf="formGroup.controls[field.name].invalid && formGroup.controls[field.name].touched"
             class="error"
@@ -81,7 +88,7 @@
             {{ field.name | titlecase }} is required.
           </div>
         </div>
-         <!-- Submit Button -->
+         
       <button type="button" (click)="downloadFormData()" class="submit-btn">Submit</button>
       </form>
     </div>

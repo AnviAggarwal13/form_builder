@@ -1,118 +1,121 @@
-/* Main Container Styles */
 .form-container {
-    display: flex; /* Align items side by side */
-    justify-content: space-around; /* Distribute space evenly */
-    align-items: flex-start; /* Align items to the top */
-    margin-top: 50px; /* Add space above the form */
-    padding: 20px; /* Add padding inside the container */
+    display: flex; 
+    justify-content: space-around; 
+    align-items: flex-start;
+    margin-top: 50px; 
+    padding: 20px; 
   }
 
-  /* Heading Styles */
 .form-builder-heading {
-    text-align: center; /* Center the heading */
-    font-size: 36px; /* Large font size */
-    font-weight: bold; /* Bold font weight */
-    margin-bottom: 30px; /* Space below the heading */
-    color: #333; /* Dark gray color */
+    text-align: center;
+    font-size: 36px; 
+    font-weight: bold; 
+    margin-bottom: 30px; 
+    color: #333; 
   }
   
-  /* Input Side Styles */
   .input-side {
-    flex: 1; /* Allow this side to take full space */
-    padding: 20px; /* Add padding */
-    max-width: 400px; /* Limit maximum width */
+    flex: 1; 
+    padding: 20px; 
+    max-width: 400px; 
   }
   
   .input-side h3 {
-    text-align: center; /* Center the heading */
-    margin-bottom: 20px; /* Add space below the heading */
+    text-align: center; 
+    margin-bottom: 20px; 
   }
   
-  /* Input Sentence Styles */
   .input-sentence {
-    width: 100%; /* Make the input full width */
-    padding: 10px; /* Add padding inside the input */
-    font-size: 16px; /* Increase font size */
-    border-radius: 5px; /* Rounded corners */
-    border: 1px solid #ccc; /* Light border */
-    margin-bottom: 20px; /* Add space below the input */
+    width: 100%;
+    padding: 10px; 
+    font-size: 16px; 
+    border-radius: 5px;
+    border: 1px solid #ccc; 
+    margin-bottom: 20px; 
   }
   
-  /* Button Styles */
   .generate-btn,
-  .remove-btn,
   .submit-btn {
-    background-color: #007bff; /* Blue background */
-    color: white; /* White text */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    padding: 10px 15px; /* Add padding */
-    font-size: 16px; /* Increase font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Smooth transition */
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 15px;
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
   }
   
+  .remove-btn{
+    background-color: #d44545; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 15px;
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
   .generate-btn:hover,
   .remove-btn:hover,
   .submit-btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3; 
   }
   
   .remove-btn {
-    margin-left: 10px; /* Add space between buttons */
+    margin-left: 10px; 
   }
   
-  /* Editable Fields Styles */
   ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
+    list-style-type: none;
+    padding: 0; 
   }
   
   li {
-    margin-bottom: 10px; /* Add space between list items */
-    display: flex; /* Align items horizontally */
-    align-items: center; /* Center items vertically */
+    margin-bottom: 10px; 
+    display: flex; 
+    align-items: center; 
   }
   
-  /* Preview Side Styles */
   .preview-side {
-    flex: 1; /* Allow this side to take full space */
-    padding: 40px; /* Add padding */
+    flex: 1; 
+    padding: 40px; 
     padding-top: 20px;
-    max-width: 400px; /* Limit maximum width */
-    background-color: #f8f8f8; /* Light gray background color */
-    border-radius: 8px; /* Rounded corners for the preview */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 400px; 
+    background-color: #d8ecff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
   }
   
   .preview-side h3 {
-    text-align: center; /* Center the heading */
-    margin-bottom: 20px; /* Add space below the heading */
+    text-align: center; 
+    margin-bottom: 20px; 
   }
   
   form {
-    display: flex; /* Align items vertically */
-    flex-direction: column; /* Arrange items in a column */
-    gap: 15px; /* Space between form elements */
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
   }
   
   label {
-    font-weight: bold; /* Bold label text */
-    margin-bottom: 5px; /* Add space below the label */
+    font-weight: bold; 
+    margin-bottom: 5px; 
   }
   
   input,
   select {
-    width: 100%; /* Full width */
-    padding: 10px; /* Add padding */
-    font-size: 16px; /* Increase font size */
-    border-radius: 5px; /* Rounded corners */
-    border: 1px solid #ccc; /* Light border */
+    width: 100%; 
+    padding: 10px;
+    font-size: 16px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
   }
   
   .error {
-    color: red; /* Red text for error messages */
-    font-size: 14px; /* Smaller font size */
-    margin-top: 5px; /* Space above error message */
+    color: red; 
+    font-size: 14px; 
+    margin-top: 5px; 
   }
   
